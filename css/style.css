@@ -1,0 +1,718 @@
+/********** Theme Tokens **********/
+:root {
+    /* Text */
+    --text-main: #12141D;
+
+    /* Backgrounds */
+    --bg-main: #FAFAFB;
+    /* page background */
+    --bg-alt: #F0F1F5;
+    /* grey sections */
+    --bg-card: #FFFFFF;
+    /* cards */
+
+    /* Brand */
+    --primary: #6244C5;
+    --secondary: #FFC448;
+
+    --glow-soft: 0 0 18px var(--primary);
+    --glow-strong: 0 0 25px var(--secondary);
+
+}
+
+/********** Base **********/
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
+body * {
+    color: inherit;
+}
+
+/********** Utilities **********/
+.my-6 {
+    margin: 6rem 0;
+}
+
+.py-6 {
+    padding: 6rem 0;
+}
+
+/********** Back To Top **********/
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/********** Spinner **********/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/********** Buttons **********/
+.btn {
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #fff;
+}
+
+/********** Square Buttons **********/
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+/********** Navbar **********/
+.navbar {
+    background-color: var(--bg-main);
+}
+
+.navbar.fixed-top {
+    backdrop-filter: blur(6px);
+}
+
+.navbar .nav-link {
+    color: var(--text-main);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 992px) {
+    .navbar .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/********** Section Backgrounds **********/
+/* Alternating for normal sections */
+.section:not(.bg-light):not(.section-bg) {
+    background-color: var(--bg-alt);
+}
+
+.section:nth-child(even):not(.bg-light):not(.section-bg) {
+    background-color: var(--bg-main);
+}
+
+/* Preserve explicitly marked grey/light sections */
+.bg-light,
+.section-bg {
+    background-color: var(--bg-alt) !important;
+}
+
+#home {
+    background: url(../img/bg-header.png) left top no-repeat;
+}
+
+
+.typed-cursor {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+/********** Video Button **********/
+.btn-play {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: none;
+}
+
+.btn-play span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 16px solid #fff;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+}
+
+/********** About **********/
+#about .years .display-1 {
+    font-size: 9rem;
+    line-height: 1;
+}
+
+/********** Tabs **********/
+.skill-card {
+    color: var(--text-main) !important;
+    background-color: var(--bg-card) !important;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.skill-card:hover {
+    color: var(--secondary) !important;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/********** Skill Boxes **********/
+.skill-box {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-card) !important;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box img {
+    height: 55px;
+    object-fit: contain;
+}
+
+.skill-box small {
+    min-height: 34px;
+    display: block;
+}
+
+.skill-box .dots {
+    margin-top: auto;
+}
+
+/********** Services **********/
+.service-item {
+    background-color: var(--bg-card) !important;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item .bg-icon {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(98, 68, 197, .1);
+    border-radius: 50%;
+}
+
+/********** Portfolio **********/
+#portfolio-flters li {
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+#portfolio-flters li.active,
+#portfolio-flters li:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.portfolio-img {
+    position: relative;
+}
+
+.portfolio-btn {
+    position: absolute;
+    inset: 0;
+    background: rgba(98, 68, 197, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .3s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+}
+
+/********** Contact **********/
+.form-control {
+    border-radius: 0;
+    background: var(--bg-alt);
+    color: var(--text-main);
+}
+
+
+/********** Footer **********/
+.bg-dark {
+    background-color: var(--bg-main) !important;
+    color: var(--text-main);
+}
+
+
+#theme-toggle {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 100;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme-toggle:hover {
+    transform: rotate(20deg);
+    background-color: var(--secondary);
+}
+
+#theme-toggle i {
+    font-size: 1.2rem;
+}
+
+/* Dark mode via toggle */
+html.dark-theme {
+    --text-main: #EDEDED;
+    --bg-main: #12141D;
+    --bg-alt: #221a27;
+    --bg-card: #1A1D2B;
+}
+
+#profile-img {
+    content: url("../video/profile-v-light.mp4");
+}
+
+html.dark-theme #profile-img {
+    content: url("../video/profile-v-dark.mp4");
+}
+
+/* Timeline container */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each timeline item */
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Left part: logo + line */
+.timeline-left {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    border: 2px solid var(--primary);
+    /* Add a primary border for visibility */
+}
+
+.timeline-line {
+    width: 2px;
+    background-color: var(--primary);
+    flex: 1;
+    margin-top: 5px;
+}
+
+/* Right part: content */
+.timeline-right {
+    flex: 1;
+    padding-left: 20px;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.timeline-right:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Headings */
+.timeline-right h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+/* Company name */
+.company-name {
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 0.85rem;
+    margin: 2px 0 5px;
+}
+
+/* Dates */
+.dates {
+    font-size: 0.8rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+/* Skills tags */
+.skills {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-top: 8px;
+}
+
+/* Dark theme overrides */
+html.dark-theme .timeline-line {
+    background-color: var(--secondary);
+}
+
+html.dark-theme .timeline-right {
+    background-color: var(--bg-card);
+}
+
+html.dark-theme .company-name {
+    color: var(--secondary);
+}
+
+html.dark-theme .dates {
+    color: var(--primary);
+}
+
+html.dark-theme .skills {
+    color: var(--secondary);
+}
+
+/* Timeline container */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Timeline item */
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Left side: image + line */
+.timeline-left {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    border: 2px solid var(--primary);
+}
+
+.timeline-line {
+    width: 2px;
+    background-color: var(--primary);
+    flex: 1;
+    margin-top: 5px;
+}
+
+/* Right side: card content */
+.timeline-right {
+    flex: 1;
+    padding-left: 20px;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.timeline-right:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings and text */
+.timeline-right h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.company-name {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin: 2px 0 5px;
+}
+
+.dates {
+    font-size: 0.8rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+/* Dark theme overrides */
+html.dark-theme .timeline-line,
+html.dark-theme .company-logo {
+    border-color: var(--secondary);
+}
+
+html.dark-theme .timeline-right {
+    background-color: var(--bg-card);
+}
+
+html.dark-theme .company-name {
+    color: var(--primary);
+}
+
+html.dark-theme .dates,
+html.dark-theme .description {
+    color: var(--text-main);
+}
+
+/* --- Clean corporate bullet list --- */
+.description-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.description-list li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* ===== Collapsible ===== */
+
+.collapsible {
+    margin-top: 10px;
+}
+
+/* button */
+.collapse-btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    text-align: left;
+    font-weight: 600;
+    color: var(--primary);
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* hover */
+.collapse-btn:hover {
+    color: var(--secondary);
+}
+
+/* icon */
+.chevron {
+    font-size: 18px;
+    transition: transform 0.25s ease;
+}
+
+/* content hidden by default */
+.collapse-content {
+    padding-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+/* open state */
+.collapsible.open .collapse-content {
+    max-height: 400px;
+    /* enough for list */
+}
+
+.collapsible.open .chevron {
+    transform: rotate(45deg);
+    /* + becomes x */
+}
+
+.project-card {
+    cursor: pointer;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.92);
+    /* dark elegant overlay */
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateY(20px);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/********** Sticky Social Sidebar (Theme Compatible) **********/
+
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Base Style */
+.social-item {
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 58px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    margin: 8px 0;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+.social-item i {
+    font-size: 18px;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* Text hidden initially */
+.social-item span {
+    white-space: nowrap;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: 500;
+}
+
+/* Hover Effect */
+.social-item:hover {
+    width: 190px;
+    background: var(--secondary);
+    color: var(--text-main);
+    box-shadow: 0 0 18px var(--secondary);
+    transform: translateX(4px);
+}
+
+/* Show text on hover */
+.social-item:hover span {
+    opacity: 1;
+}
+
+/* Subtle glow animation */
+.social-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    box-shadow: 0 0 25px var(--primary);
+}
+
+.social-item:hover::after {
+    opacity: 0.6;
+}
+
+/* Dark mode compatibility */
+html.dark-theme .social-item {
+    background: var(--primary);
+}
+
+html.dark-theme .social-item:hover {
+    background: var(--secondary);
+    box-shadow: 0 0 20px var(--secondary);
+}

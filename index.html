@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+
+<head>
+    <meta charset="utf-8">
+    <title>Divyani</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+
+    <!-- ===== Sticky Social Sidebar ===== -->
+    <div class="social-sidebar">
+        <a href="https://linkedin.com/in/divyani-sonawane" target="_blank" class="social-item linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/divyanisonawane" target="_blank" class="social-item github">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+
+        <a href="https://wa.me/917028482170" target="_blank" class="social-item whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/ds-logo.png" alt="Divyani Logo" style="height: 40px;">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#edu-skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+            </div>
+
+            <div class="navbar-nav me-auto py-0">
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid mt-0 p-0" id="home">
+
+        <div class="container">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 pt-lg-0">
+                    <h3 class="text-primary mb-3">I'm</h3>
+                    <h1 class="display-3 mb-3">Divyani Sonawane</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Data Engineer, Data Platform Engineer, Production Data Systems</div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a href="./resume/Resume-V2.pdf" id="download-resume" class="btn btn-primary py-3 px-4 me-5">
+                            Download CV
+                        </a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" id="profile-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- About Start -->
+    <div class="container-fluid  bg-light  py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Left Column: About Text -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">07+</h1>
+                            <h5 class="mb-0">Years</h5>
+                        </div>
+                        <h3 class="lh-base mb-0">Data Engineer building reliable production data systems</h3>
+                    </div>
+                    <p class="mb-4">
+                        I design and maintain production-grade data platforms where reliability, correctness, and
+                        operational visibility are critical. My work focuses on ingestion architecture, validation
+                        frameworks, monitoring systems, and automation that reduce manual effort and improve data trust.
+                    </p>
+                    <p class="mb-3">
+                        <i class="far fa-check-circle text-primary me-3"></i>
+                        <strong>Marine Industry:</strong> Applied data analytics to optimize vessel performance and
+                        reduce fuel consumption and CO₂ emissions.
+                    </p>
+                    <p class="mb-3">
+                        <i class="far fa-check-circle text-primary me-3"></i>
+                        <strong>Operational Automation:</strong> Automated regulatory and operational workflows
+                        previously
+                        handled in Excel/manual processes, reducing issue
+                        identification and resolution time by 70%.
+                    </p>
+                    <p class="mb-3">
+                        <i class="far fa-check-circle text-primary me-3"></i>
+                        <strong>Automotive Industry:</strong>Automated infotainment hardware testing, reducing test
+                        cycle time by 70%.
+                    </p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="#project">View Projects</a>
+                </div>
+
+                <!-- Right Column: Images & Stats -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/about-1.jpg">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/about-2.jpg">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Production Systems</h5>
+                        <h2 class="text-primary fw-bold mb-0">Enterprise</h2>
+                    </div>
+                    <p class="mb-4">
+                        Designed and maintained data pipelines and monitoring systems running in production
+                        environments,
+                        supporting real-time operational and compliance workflows.
+                    </p>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Operational Impact</h5>
+                        <h2 class="text-primary fw-bold mb-0">Cross-Industry</h2>
+                    </div>
+                    <p class="mb-0">
+                        Automated onboarding, regulatory reporting, validation, and testing processes across maritime,
+                        automotive, and healthcare domains to improve reliability and reduce manual effort.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <div class="container-xxl py-6 pb-5" id="edu-skill">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- LEFT SIDE — EDUCATION & EXPERIENCE -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                    <h1 class="display-5 mb-4">Education & Experience</h1>
+                    <hr class="mb-4">
+
+                    <!-- TAB BUTTONS -->
+                    <ul class="nav nav-tabs mb-4" id="eduExpTab" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link skill-card active" id="experience-tab" data-bs-toggle="tab"
+                                data-bs-target="#experience" type="button" role="tab" aria-controls="experience"
+                                aria-selected="true">
+                                Experience
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link skill-card" id="education-tab" data-bs-toggle="tab"
+                                data-bs-target="#education" type="button" role="tab" aria-controls="education"
+                                aria-selected="false">
+                                Education
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- TAB CONTENT -->
+                    <div class="tab-content" id="eduExpTabContent">
+
+                        <!-- EXPERIENCE TAB -->
+                        <div class="tab-pane fade show active" id="experience" role="tabpanel"
+                            aria-labelledby="experience-tab">
+                            <div class="experience-timeline">
+
+                                <!-- Integration Engineer -->
+                                <div class="timeline-item">
+                                    <div class="timeline-left">
+                                        <img src="img/danelec-logo.png" alt="Danelec" class="company-logo">
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-right">
+                                        <h4>Integration Engineer</h4>
+                                        <p class="company-name">Danelec Marine</p>
+                                        <p class="dates">(Jan 2024 - Present)</p>
+                                        <p class="description">
+                                            ingestion pipelines produced unreliable and inconsistent operational data.
+                                        </p>
+                                        <div class="collapsible">
+                                            <button class="collapse-btn">
+                                                Key Responsibilities
+                                                <span class="chevron">+</span>
+                                            </button>
+
+                                            <div class="collapse-content">
+                                                <ul class="description-list">
+                                                    <li>Expanded and stabilized large-scale ETL pipelines delivering
+                                                        fleet
+                                                        performance insights to operators and leadership</li>
+                                                    <li>Replaced manual CLI onboarding with a UI-based vessel
+                                                        integration
+                                                        platform,
+                                                        reducing onboarding effort and integration dependency</li>
+                                                    <li>Implemented anomaly detection and monitoring (Datadog) improving
+                                                        operational
+                                                        visibility and data reliability</li>
+                                                    <li>Automated EU MRV & IMO DCS emission compliance workflows
+                                                        removing manual
+                                                        reporting effort</li>
+                                                    <li>Introduced domain validation rules reducing dirty maritime data
+                                                        and
+                                                        improving downstream analytics accuracy</li>
+                                                    <li>Built fleet-level performance dashboards for operational and
+                                                        leadership decision-making.</li>
+                                                </ul>
+                                            </div>
+
+                                            <p><strong>Impact:</strong> Reduced system issue rates by ~30%, accelerated
+                                                vessel onboarding, and improved data trust across fleet-level reporting.
+                                            </p>
+
+                                            <p class="skills">Python • SQL • AWS • Streamlit • Datadog</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Senior Software Engineer -->
+                                <div class="timeline-item">
+                                    <div class="timeline-left">
+                                        <img src="img/rda-logo.png" alt="RDA Labs" class="company-logo">
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-right">
+                                        <h4>Senior Software Engineer</h4>
+                                        <p class="company-name">RDA Labs</p>
+                                        <p class="dates">(Oct 2022 - Dec 2023)</p>
+                                        <p class="description">
+                                            Fleet operators received heterogeneous ship data from multiple sources
+                                            making analysis and optimization difficult.
+                                        </p>
+                                        <div class="collapsible">
+                                            <button class="collapse-btn">
+                                                Key Responsibilities
+                                                <span class="chevron">+</span>
+                                            </button>
+                                            <div class="collapse-content">
+                                                <ul class="description-list">
+                                                    <li>Built multi-source ingestion pipelines (APIs, S3, Azure, files,
+                                                        emails, SFTP)</li>
+                                                    <li>Developed Streamlit-based validation & outage detection tools
+                                                        for integration teams</li>
+                                                    <li>Standardized vessel telemetry into unified JSON schema across
+                                                        ship systems</li>
+                                                    <li>Automated EU MRV & IMO DCS emission compliance workflows
+                                                        removing manual
+                                                        reporting effort</li>
+                                                    <li>Automated operational workflows including defect tracking and
+                                                        KPI report tools for integration teams</li>
+                                                </ul>
+                                            </div>
+
+                                            <p><strong>Impact:</strong> Reduced system error rates by 30% and
+                                                contributed to operational optimizations removing nearly 200,000
+                                                metric tons of CO₂</p>
+
+                                            <p class="skills">Python • SQL • AWS • Streamlit</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Software Engineer -->
+                            <div class="timeline-item">
+                                <div class="timeline-left">
+                                    <img src="img/tcs-logo.png" alt="TCS" class="company-logo">
+                                </div>
+                                <div class="timeline-right">
+                                    <h4>Software Engineer</h4>
+                                    <p class="company-name">Tata Consultancy and Services</p>
+                                    <p class="dates">(Nov 2018 - Sep 2022)</p>
+                                    <p class="description">
+                                        Manufacturing validation and infotainment testing required
+                                        repetitive manual effort and slow release cycles.
+                                    </p>
+                                    <div class="collapsible">
+                                        <button class="collapse-btn">
+                                            Key Responsibilities
+                                            <span class="chevron">+</span>
+                                        </button>
+
+                                        <div class="collapse-content">
+                                            <ul class="description-list">
+                                                <li>Automated IVI hardware testing using image processing reducing
+                                                    test cycle time by 70%</li>
+                                                <li>Built internal data extraction and KPI reporting tools for
+                                                    operational monitoring</li>
+                                                <li>Supported production systems and manufacturing workflow analysis
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p><strong>Impact:</strong>Faster validation cycles and improved
+                                            release confidence</p>
+
+                                        <p class="skills">Python • Computer Vision • SQL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- EDUCATION TAB -->
+                        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+
+                            <div class="experience-timeline">
+
+                                <!-- Graduation -->
+                                <div class="timeline-item">
+                                    <div class="timeline-left">
+                                        <img src="img/nmu-logo.png" alt="University" class="company-logo">
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-right">
+                                        <h4>Graduation in Electronics & Telecommunication</h4>
+                                        <p class="company-name">Kavayitri Bahinabai Chaudhari North Maharashtra
+                                            University</p>
+                                        <p class="dates">(Jun 2014 – Jun 2018)</p>
+                                        <p class="description">
+                                            Focused on electronics, telecommunication systems, and embedded
+                                            programming.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- JLPT N5 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-left">
+                                        <img src="img/jlpt-logo.png" alt="JLPT N5" class="company-logo">
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-right">
+                                        <h4>JLPT N5 – Japanese Language</h4>
+                                        <p class="company-name">Self Study</p>
+                                        <p class="dates">(Ongoing)</p>
+                                        <p class="description">
+                                            Learning Japanese for professional and global collaboration.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <!-- RIGHT SIDE — DATA ENGINEER SKILLS -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+
+                    <h1 class="display-5 mb-2">Data Engineering Skills</h1>
+                    <p class="text-muted mb-4">Production engineering + modern data stack hands-on projects</p>
+                    <hr class="mb-4">
+
+                    <!-- ================= PRODUCTION EXPERIENCE ================= -->
+                    <h5 class="fw-bold mb-3">Production Experience</h5>
+                    <div class="row g-4 mb-4">
+
+                        <!-- PYTHON -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/python.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Python</h6>
+                                <small class="text-muted">Data ingestion, automation & system tooling</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ●</div>
+                            </div>
+                        </div>
+
+                        <!-- SQL -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/sql.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">SQL</h6>
+                                <small class="text-muted">Schema design, modeling & query optimization</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ●</div>
+                            </div>
+                        </div>
+
+                        <!-- POSTGRES -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/postgres.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">PostgreSQL</h6>
+                                <small class="text-muted">Relational modeling & performance tuning</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ●</div>
+                            </div>
+                        </div>
+
+                        <!-- AWS -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/aws.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">AWS</h6>
+                                <small class="text-muted">S3, IAM, integrations</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ●</div>
+                            </div>
+                        </div>
+
+                        <!-- DATA PIPELINES -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/datapipeline.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Data Pipelines</h6>
+                                <small class="text-muted">Batch workflows, validation & failure handling</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ○</div>
+                            </div>
+                        </div>
+
+                        <!-- DATADOG -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/apiintegration.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">API Integrations</h6>
+                                <small class="text-muted">External data ingestion & reliability handling</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ○</div>
+                            </div>
+                        </div>
+                        <!-- DATADOG -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/datavalidation.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Data Validation Framework</h6>
+                                <small class="text-muted">Schema enforcement & data quality checks</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ○</div>
+                            </div>
+                        </div>
+                        <!-- DATADOG -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/datadog.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Datadog</h6>
+                                <small class="text-muted">Production monitoring & anomaly detection</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ○</div>
+                            </div>
+                        </div>
+                        <!-- DATADOG -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/streamlit.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Streamlit Tools</h6>
+                                <small class="text-muted">Internal operational dashboards</small>
+                                <div class="dots text-danger mt-1">● ● ● ● ○</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ================= PROJECT EXPERIENCE ================= -->
+                    <h5 class="fw-bold mb-3">Modern Data Stack (Applied Projects)</h5>
+                    <div class="row g-4">
+
+                        <!-- REDSHIFT -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/redshift.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Amazon Redshift</h6>
+                                <small class="text-muted">Dimensional modeling & warehouse optimization</small>
+                                <div class="dots text-danger mt-1">● ● ● ○ ○</div>
+                            </div>
+                        </div>
+
+                        <!-- AIRFLOW -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/airflow.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Apache Airflow</h6>
+                                <small class="text-muted">DAG orchestration & dependency management</small>
+                                <div class="dots text-danger mt-1">● ● ● ○ ○</div>
+                            </div>
+                        </div>
+
+                        <!-- PYSPARK -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/pyspark.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">PySpark</h6>
+                                <small class="text-muted">Large dataset transforms</small>
+                                <div class="dots text-danger mt-1">● ● ○ ○ ○</div>
+                            </div>
+                        </div>
+
+                        <!-- DATABRICKS -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/databricks.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Databricks</h6>
+                                <small class="text-muted">Lakehouse workflows</small>
+                                <div class="dots text-danger mt-1">● ● ○ ○ ○</div>
+                            </div>
+                        </div>
+
+                        <!-- DOCKER -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/docker.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Docker</h6>
+                                <small class="text-muted">Containerized pipelines</small>
+                                <div class="dots text-danger mt-1">● ● ● ○ ○</div>
+                            </div>
+                        </div>
+
+                        <!-- TERRAFORM -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="skill-box p-4 border rounded bg-white shadow-sm">
+                                <img src="img/terraform.png" width="55" class="mb-2">
+                                <h6 class="fw-semibold">Terraform</h6>
+                                <small class="text-muted">Infra provisioning</small>
+                                <div class="dots text-danger mt-1">● ● ○ ○ ○</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light py-6" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Services</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="row g-4">
+
+                <!-- Data Engineering -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 shadow-sm">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-database fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Data Platform Engineering</h4>
+                            <span>Build and maintain reliable data ingestion and processing systems for high-volume
+                                telemetry and operational datasets, enabling analytics and decision-making.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps Integration -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 shadow-sm">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-cloud fa-2x text-success"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Data Reliability & Observability</h4>
+                            <span>Implement monitoring, anomaly detection, and validation frameworks to improve data
+                                trust, detect failures early, and reduce operational support effort.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automation & Tool Development -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 shadow-sm">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-robot fa-2x text-warning"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Internal Data Tools & Automation</h4>
+                            <span>Develop internal tools and automation workflows that simplify onboarding, validation,
+                                and operational workflows for engineering and business teams.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Standardization & Analytics -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 shadow-sm">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-chart-bar fa-2x text-danger"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Data Modeling & Standardization</h4>
+                            <span>Design structured schemas and transformation pipelines to standardize heterogeneous
+                                source data into analytics-ready datasets.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">Tools Project</li>
+                        <li class="mx-3" data-filter=".second">Web Development</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp " data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item platform first">
+                    <div class="project-card position-relative overflow-hidden rounded shadow-sm">
+
+                        <!-- IMAGE -->
+                        <img class="img-fluid w-100" src="img/fleet-pulse.jpg" alt="Fleet Pulse">
+
+                        <!-- HOVER OVERLAY -->
+                        <div class="project-overlay d-flex flex-column justify-content-center text-center p-4">
+                            <h6 class="fw-bold text-white">🚢 Fleet Pulse</h6>
+                            <small class="text-light mb-2">
+                                Telemetry validation & anomaly detection dashboard for vessel sensor reliability
+                                monitoring
+                            </small>
+                            <small class="text-light mb-3">
+                                <strong>Stack:</strong> Python, Streamlit, Pandas, Plotly
+                            </small>
+
+                            <div>
+                                <a class="btn btn-sm btn-light me-2" href="img/fleet-pulse.jpg"
+                                    data-lightbox="portfolio">Architecture</a>
+
+                                <a class="btn btn-sm btn-primary"
+                                    href="https://github.com/divyanisonawane/portfolio-projects/tree/main/apps/fleet-pulse/README.md"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item platform first">
+                    <div class="project-card position-relative overflow-hidden rounded shadow-sm ">
+
+                        <!-- IMAGE -->
+                        <img class="img-fluid w-100" src="img/jira-dashly.jpg" alt="Jira Dashly">
+
+                        <!-- HOVER OVERLAY -->
+                        <div class="project-overlay d-flex flex-column justify-content-center text-center p-4">
+                            <h6 class="fw-bold text-white">📊 Jira Dashly</h6>
+                            <small class="text-light mb-2">
+                                Operational metrics dashboard that extracts and analyzes Jira issue data
+                            </small>
+                            <small class="text-light mb-3">
+                                <strong>Stack:</strong> Python, Streamlit, SQL
+                            </small>
+
+                            <div>
+                                <a class="btn btn-sm btn-light me-2" href="img/jira-dashly.jpg"
+                                    data-lightbox="portfolio">Architecture</a>
+
+                                <a class="btn btn-sm btn-primary"
+                                    href="https://github.com/divyanisonawane/portfolio-projects/tree/main/apps/jiradashly/README.md"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item platform first">
+                    <div class="project-card position-relative overflow-hidden rounded shadow-sm ">
+
+                        <!-- IMAGE -->
+                        <img class="img-fluid w-100" src="img/pixel-verifier.jpg" alt="Pixel Verifier">
+
+                        <!-- HOVER OVERLAY -->
+                        <div class="project-overlay d-flex flex-column justify-content-center text-center p-4">
+                            <h6 class="fw-bold text-white">🖼️ Pixel Verifier</h6>
+                            <small class="text-light mb-2">
+                                Image inspection utility to validate and analyze pixel-level properties
+                            </small>
+                            <small class="text-light mb-3">
+                                <strong>Stack:</strong> Python, Streamlit, PIL
+                            </small>
+
+                            <div>
+                                <a class="btn btn-sm btn-light me-2" href="img/pixel-verifier.jpg"
+                                    data-lightbox="portfolio">Architecture</a>
+
+                                <a class="btn btn-sm btn-primary"
+                                    href="https://github.com/divyanisonawane/portfolio-projects/tree/main/apps/pixel-verify/README.md"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item platform second">
+                    <div class="project-card position-relative overflow-hidden rounded shadow-sm ">
+
+                        <!-- IMAGE -->
+                        <img class="img-fluid w-100" src="img/lilac-tomo.jpg" alt="Lilac Tomo">
+
+                        <!-- HOVER OVERLAY -->
+                        <div class="project-overlay d-flex flex-column justify-content-center text-center p-4">
+                            <h6 class="fw-bold text-white">🌸 Lilac Tomo</h6>
+                            <small class="text-light mb-2">
+                                Interactive Japanese learning app with flashcards and quizzes
+                            </small>
+                            <small class="text-light mb-3">
+                                <strong>Stack:</strong> Python, Streamlit
+                            </small>
+
+                            <div>
+                                <a class="btn btn-sm btn-light me-2" href="img/lilac-tomo.jpg"
+                                    data-lightbox="portfolio">Architecture</a>
+
+                                <a class="btn btn-sm btn-primary"
+                                    href="https://github.com/divyanisonawane/portfolio-projects/tree/main/apps/lilactomo/README.md"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item platform second">
+                    <div class="project-card position-relative overflow-hidden rounded shadow-sm">
+
+                        <!-- IMAGE -->
+                        <img class="img-fluid w-100" src="img/hkd-webapp.jpg" alt="HKD WebApp">
+
+                        <!-- HOVER OVERLAY -->
+                        <div class="project-overlay d-flex flex-column justify-content-center text-center p-4">
+                            <h6 class="fw-bold text-white">🌐 HKD WebApp</h6>
+                            <small class="text-light mb-2">
+                                Informational website for community activities and resources
+                            </small>
+                            <small class="text-light mb-3">
+                                <strong>Stack:</strong> Airflow · PySpark · Redshift · Docker · S3
+                            </small>
+
+                            <div>
+                                <a class="btn btn-sm btn-light me-2" href="img/hkd-webapp.jpg"
+                                    data-lightbox="portfolio">Architecture</a>
+
+                                <a class="btn btn-sm btn-primary"
+                                    href="https://github.com/divyanisonawane/portfolio-projects/tree/main/apps/hkd-webapp/README.md"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item platform first">
+                    <div class="project-card position-relative overflow-hidden rounded shadow-sm">
+
+                        <!-- IMAGE -->
+                        <img class="img-fluid w-100" src="img/lilac-tomo.jpg" alt="Fleet Pulse Lakehouse">
+
+                        <!-- HOVER OVERLAY -->
+                        <div class="project-overlay d-flex flex-column justify-content-center text-center p-4">
+                            <h6 class="fw-bold text-white">Fleet Pulse — Lakehouse Pipeline</h6>
+                            <small class="text-light mb-2">
+                                End-to-end telemetry data platform with orchestration, warehouse modeling & validation.
+                            </small>
+                            <small class="text-light mb-3">
+                                <strong>Stack:</strong> Airflow · PySpark · Redshift · Docker · S3
+                            </small>
+
+                            <div>
+                                <a class="btn btn-sm btn-light me-2" href="img/project-6.jpg"
+                                    data-lightbox="portfolio">Architecture</a>
+
+                                <a class="btn btn-sm btn-primary"
+                                    href="https://github.com/divyanisonawane/portfolio-projects/tree/main/apps/fleet-pulse-lakehouse/README.md"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid  pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Contact Me</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="https://wa.me/917028482170">Say Hello</a>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">My Location:</p>
+                    <h3 class="fw-bold">Pune, India</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Call me:</p>
+                    <h3 class="fw-bold">7028482170</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Mail me:</p>
+                    <h3 class="fw-bold">sonawanedivyani148@gmail.com</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Follow me:</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href="https://linkedin.com/in/divyani-sonawane"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://github.com/divyanisonawane"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://wa.me/917028482170"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <button id="theme-toggle" title="Toggle Theme">
+        <i class="bi bi-sun" id="theme-icon"></i>
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
