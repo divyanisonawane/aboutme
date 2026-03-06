@@ -59,6 +59,6 @@ Previously at **TCS**, I worked on automation and image-processing solutions for
 
 ## 📫 Connect With Me
 
-- Portfolio: https://divyanisonawane.github.io  
+- Portfolio: [https://divyanisonawane.github.io ](https://divyanisonawane.github.io/aboutme/) 
 - Linkedin: www.linkedin.com/in/divyani-sonawane
 - GitHub: https://github.com/divyanisonawane
